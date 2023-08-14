@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <div class="letters mb-3">
+        <% @letters.each do |letter| %>
+            <div class="border border-primary rounded p-2" style="display: inline-block;">
+                <%= letter %>
+            </div>
+        <% end %>
+    </div>
+
+    <form action="/score" method="post" data-turbo="false">
+        <input name="tried" type="text" class="form-control mb-3" placeholder="Letters" required>
+        <input name="letters" type="hidden" value="<%= @letters.join %>">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    </form>
+</div>

@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+ .letters {
+  display: flex;
+ }
+
+ .letter {
+  border: black solid 1px;
+  padding: 8px;
+  background-color: #3498db;
+  margin: 8px;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+ }
+.btn {
+  margin-top: 8px;
+}
+#title {
+  margin-top: 8px;
+}
+
+.container {
+  display: flex;
+  width: 75%;
+  border: lightgrey solid 1px;
+  border-radius: 5px;
+}
+.btnn {
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  border-left:  lightgray solid 1px;
+}
+.form {
+  width: 100%;
+  border: none;
+}
